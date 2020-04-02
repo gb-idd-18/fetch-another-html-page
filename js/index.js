@@ -14,7 +14,10 @@ let loadContentFromHtmlFile = (event) => {
 
 			// The loadthis.html page has been loaded!
 			// Append the content from the new page into the old page
-			document.querySelector('#content').innerHTML += newDocument.querySelector('#content').innerHTML
+			// document.querySelector('#content').innerHTML += newDocument.querySelector('#content').innerHTML
+			
+			// REAPLACE the content, rather than append
+			document.querySelector('#content').innerHTML = newDocument.querySelector('#content').innerHTML
 			
 			// Take down the loading screen, we're done
 			document.querySelector('.loading').classList.remove('show')
