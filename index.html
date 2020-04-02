@@ -15,7 +15,13 @@
 			<button id="load">Go get the #content from loadthis.html</button>
 		
 			<script>
-				// Custom Javascript for only this "page" can go here.
+				// **** Custom Javascript for only this "page" can go here! ****
+
+				// Testing a new page load on an event (click)
+				let testGoingToLoadthis = (event) => {
+					loadContentFromHtmlFile('/loadthis.html')
+				}
+				document.querySelector('#load').addEventListener('click', testGoingToLoadthis)
 			</script>
 		</main>
 
